@@ -1,4 +1,4 @@
-**Credit Risk Simulator**
+**Loan Risk Simulator**
 
 **Overview**
 
