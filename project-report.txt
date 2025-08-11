@@ -1,0 +1,23 @@
+Second Report for a Student Chosen Project
+
+1. Time Log
+
+            Time Spent
+   Date       (hours)   Description of Work
+----------  ----------  -------------------------------------------------------
+2025-08-04      0.5     Planned project scope, defined core functionalities and modules
+2025-08-04      1.5     Implemented calculate_dti and evaluate_credit_score_range functions
+2025-08-04      1.0     Created test_risk_evaluator.py and wrote initial pytest tests
+2025-08-04      1.5     Added loan_approval_probability function and integrated with tests
+2025-08-04      0.5     Designed CSV structure and prepared applicants.csv dataset
+2025-08-05      1.5     Implemented load_applicant_data and tested CSV parsing
+2025-08-05      1.0     Debugged and refined probability calculation logic
+2025-08-06      1.5     Created visualization.py with matplotlib bar chart function
+2025-08-07      1.0     Updated main.py to integrate all modules with visualization
+2025-08-08      1.0     Ran full pytest suite, fixed minor bugs, and improved comments
+2025-08-09      0.5     Researched matplotlib backend options to avoid GUI test warnings
+2025-08-09      1.0     Implemented adjustments to visualization function for test mode
+2025-08-11      1.0     Final review of code, cleaned unused imports, and polished comments
+2025-08-11      0.5     Prepared project-report.txt and verified all files for submission
+
+Total Hours: 14.0
