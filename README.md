@@ -38,9 +38,9 @@ CSV Module – Data handling
 
 Clone the repository
 
-git clone https://github.com/yourusername/credit_risk_project.git
+git clone https://github.com/LordPuposky/loan_risk_calculator.git
+cd loan_risk_calculator
 
-cd credit_risk_project
 Create a virtual environment
 python -m venv venv
 Activate the virtual environment
