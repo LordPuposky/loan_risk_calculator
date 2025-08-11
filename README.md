@@ -32,18 +32,7 @@ CSV Module – Data handling
 
 **Project Structure**
 
-loan_risk_project/
-├── main.py
-├── risk_evaluator.py
-├── visualization.py
-├── data/
-│   └── applicants.csv
-├── tests/
-│   ├── test_risk_evaluator.py
-│   └── test_visualization.py
-├── requirements.txt
-├── project-report.txt
-└── README.md
+<img width="373" height="243" alt="image" src="https://github.com/user-attachments/assets/6df0e077-76cb-4865-b0af-3660be64ba30" />
 
 **Installation & Usage**
 
