@@ -1,85 +1,106 @@
-**Loan Risk Calculator**
+**Credit Risk Simulator**
 
-A Python-based tool that simulates the credit risk evaluation process for personal loans.  
-The program calculates key financial indicators such as **Debt-to-Income Ratio (DTI)** and estimates an **approval probability** based on a simplified model used in FinTech.
+**Overview**
 
----
+This Python project simulates a credit risk evaluation process for loan applicants.
+It calculates the Debt-to-Income Ratio (DTI), evaluates credit score ranges, and estimates the probability of loan approval using a weighted scoring system.
+The project includes data visualization with Matplotlib to better understand applicant risk profiles.
 
 **Features**
-- Calculates **Debt-to-Income Ratio (DTI)**.
-- Categorizes **credit score** into standard rating ranges.
-- Computes **loan approval probability** using a weighted model.
-- Loads applicant data from CSV files.
-- Unit tests with **pytest** to ensure reliability.
 
----
+DTI Calculation – Computes the debt-to-income ratio for each applicant.
+
+Credit Score Categorization – Classifies credit scores into standard ranges.
+
+Loan Approval Probability – Uses credit score, DTI, and employment history to estimate approval chances.
+
+CSV Data Loading – Reads applicant data from a CSV file.
+
+Visualization – Generates bar charts comparing approval probabilities.
+
+Unit Testing – Includes pytest tests for core functions.
+
+**Technologies Used**
+
+Python 3
+
+Matplotlib – Data visualization
+
+Pytest – Unit testing
+
+CSV Module – Data handling
 
 **Project Structure**
 
-<img width="365" height="276" alt="imagen" src="https://github.com/user-attachments/assets/ca919a12-9e50-4d74-bef5-d6d15c0efdf5" />
+loan_risk_project/
+├── main.py
+├── risk_evaluator.py
+├── visualization.py
+├── data/
+│   └── applicants.csv
+├── tests/
+│   ├── test_risk_evaluator.py
+│   └── test_visualization.py
+├── requirements.txt
+├── project-report.txt
+└── README.md
 
----
+**Installation & Usage**
 
-**Requirements**
-- Python 3.8+
-- pandas (optional, for future data handling)
-- matplotlib (optional, for visualization)
-- pytest
+Clone the repository
 
-Install dependencies (if any) with:
+git clone https://github.com/yourusername/credit_risk_project.git
 
+cd credit_risk_project
+Create a virtual environment
+python -m venv venv
+Activate the virtual environment
+
+**Windows:**
+
+venv\Scripts\activate
+
+**Mac/Linux:**
+
+source venv/bin/activate
+Install dependencies
 pip install -r requirements.txt
-
-**How to Run**
-
-1. Clone the repository
-
-git clone https://github.com/LordPuposky/loan_risk_calculator.git
-cd loan_risk_calculator
-
-2. Run the main program
-
+Run the program
 python main.py
 
-3. Run the tests
+Run tests
+pytest
 
-pytest -q
+**Example Output**
 
- **Example Output**
+The program generates:
 
- Applicant: Alice
-  Credit Score: 720 (Good)
-  DTI: 0.15
-  Approval Probability: 78.6%
-------------------------------
-Applicant: Bob
-  Credit Score: 580 (Fair)
-  DTI: 0.4
-  Approval Probability: 52.3%
-------------------------------
+A console report with DTI, credit score category, and approval probability for each applicant.
+
+A bar chart comparing approval probabilities.
 
 **Testing**
 
-The project includes unit tests to verify:
+The project includes unit tests for:
 
-calculate_dti() returns correct ratios or None for invalid data.
+calculate_dti()
 
-evaluate_credit_score_range() returns correct credit categories.
+evaluate_credit_score_range()
 
-loan_approval_probability() returns a value between 0 and 1.
+loan_approval_probability()
 
-Run tests with:
+Run:
 
-pytest -q
+pytest
 
 **Future Improvements**
 
-Add visualization of risk distribution with matplotlib.
+Add a GUI for easier data entry.
 
-Integrate with external financial APIs.
+Integrate with a real credit scoring API.
 
-Implement a more advanced credit scoring algorithm.
+Implement risk thresholds for automated decision-making.
 
 **License**
 
-This project is for educational purposes as part of the CSE111 Programming with Functions course at BYU.
+This project is for educational purposes as part of the CSE111 Programming with Functions course at BYU Pathway.
